@@ -1,0 +1,32 @@
+.side-navbar{ 
+    padding: 15px;
+    font-size: larger;
+    background-color: 	#2F4F4F;
+    width: 20%;
+    height: -webkit-fill-available;
+    text-align: left;
+    position: fixed;
+    left: 0;
+    top: 72px;
+    bottom: 0;
+}
+.items,sidebar,a{
+    color:white!important;
+    text-decoration: none;
+}
+.page-panel{
+    padding-left: 260px;
+    padding-top: 70px;
+}
+.language{
+    font-size: large;
+    color:white;
+}
+marquee{
+    color:rgb(112, 42, 224);
+    font-size: large;
+}
+button{
+    padding: 10px;
+    margin-right: 5px;
+}

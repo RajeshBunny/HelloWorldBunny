@@ -1,0 +1,29 @@
+<div class="logo">
+  <img src="../../assets/angular.png">
+</div>
+<div class="container">
+  <h5>Regiter Form coming from {{ registerMessage }} </h5>
+  <div class="card">
+    <div class="jumbotron">
+      <form (ngSubmit)="onSubmit();">
+        <div class="form-group">
+          <label for="email">Register Email</label>
+          <input type="email" class="form-control" [(ngModel)]="username" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" [(ngModel)]="password" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="pull-right">
+
+          <button type="button" (click)="loginNavigate()" class="btn btn-primary">Login</button>
+          <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<app-footer></app-footer>

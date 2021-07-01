@@ -1,0 +1,22 @@
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  font-display: inherit;
+  line-height: 1.7em;
+  margin-left: 5px;
+}
+.ui-accordion ui-widget ui-helper-reset {
+  width: 80%;
+  margin-left: 5%;
+}
+.ui-helper-reset {
+  line-height: normal;
+  width: 80%;
+}
+.normal {
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  text-shadow: slategrey;
+  line-height: 1.7em;
+  color: slateblue;
+}
