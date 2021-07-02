@@ -13,20 +13,17 @@ export class TextSentimentComponent implements OnInit {
   dname: any;
   name: any;
   position: any;
-  dpos: any;
-  dpass: any;
   dynamicdata: any;
   genders = ['male', 'female'];
 
   userData = {
     username: '',
-    email: '',
-    country: '',
-    gender: ''
+    years: '',
+    position: '',
   };
   submitted = false;
   formText = new FormGroup({
-    firstName: new FormControl('Rajesh', Validators.required),
+    firstName: new FormControl('Sai', Validators.required),
     lastName: new FormControl(123),
     password: new FormControl('', Validators.required)
 
@@ -50,16 +47,14 @@ export class TextSentimentComponent implements OnInit {
 
   }
   onSubmit() {
-    this.dname = this.name;
-    this.dpass = this.years;
-    this.dpos = this.position;
+
+    console.log(this.userData)
 
     this.dynamicdata = {
-      Name: this.dname,
-      Years: this.dpass,
-      Position: this.dpos
-    };
-
+      Name: this.userData.username,
+      Years: this.userData.years,
+      Position: this.userData.position
+    }
     console.log(this.dynamicdata);
     this.mydata.push(this.dynamicdata);
     console.log(this.mydata);

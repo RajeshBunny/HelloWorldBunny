@@ -3,28 +3,11 @@
   height: 20px;
 }
 .container {
-  width: 40%;
+  width: 45%;
   margin-top: 10%;
 }
 
 
-.card {
-  background-color: #b3bcc5;
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-.card:hover {
-  background-color: #e4eaf0;
-  cursor: pointer;
-}
-.divya {
-  border-radius: 200px;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-}
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
