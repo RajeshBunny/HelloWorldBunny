@@ -1,43 +1,46 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { RouterModule, Routes } from "@angular/router";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent} from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { TrainComponent } from './train/train.component';
 
-import { loginComponent } from "./login/login.component";
-import { DashboardComponent } from "./dashboard/dashboard.component";
-//import { TextAnalyticsComponent } from './text-analytics/text-analytics.component';
-import { LanguageTranslatorComponent } from "./language-translator/language-translator.component";
-import { VoiceTextComponent } from "./voice-text/voice-text.component";
-import { ConverseComponent } from "./converse/converse.component";
-//import { AnalyzedTableComponent } from './text-analytics/analyzed-table/analyzed-table.component';
-//import { AnalyzedJsonComponent } from './text-analytics/analyzed-json/analyzed-json.component';
-import { TextDetectionComponent } from "./text-detection/text-detection.component";
-//import {TextEntityComponent} from './text-analytics/text-entity/text-entity.component';
-import { TextSentimentComponent } from "./text-sentiment/text-sentiment.component";
-import { RegisterComponent } from "./register/register.component";
-import { ParentComponent } from "./parent/parent.component";
-import { AuthGuard } from "./auth.guard";
-//import { TextKeyphrasesComponent } from './text-analytics/tabs/text-keyphrases/text-keyphrases.component';
-//import { MainTabComponent } from './text-analytics/tabs/text-keyphrases/tabtext-component';
-const routes: Routes = [
-  { path: "login", component: loginComponent },
-  { path: "register", component: RegisterComponent },
+export const routes: Routes = [
   {
-    path: "dashboard",
-    component: DashboardComponent,
-    children: [
-      { path: "services", component: TextSentimentComponent },
-      { path: "dynamictable", component: LanguageTranslatorComponent },
-      { path: "letter", component: VoiceTextComponent },
-      { path: "video", component: ConverseComponent },
-      { path: "scroll", component: TextDetectionComponent },
-      { path: "parent", component: ParentComponent }
-    ]
+    path:'contact',
+    component:ContactComponent
   },
-  { path: "", redirectTo: "login", pathMatch: "full" }
+  {
+    path:'about',
+    component:AboutComponent
+  },
+  {
+    path:'skills',
+    component:SkillsComponent
+  },
+  {
+    path:'projects',
+    component:ProjectsComponent
+  },
+  {
+    path:'train',
+    component:TrainComponent
+  },
+
+
+
+
+
+
+
+
+
+
 ];
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
